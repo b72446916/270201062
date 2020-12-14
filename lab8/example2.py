@@ -1,7 +1,8 @@
 def is_prime(i):
   i = int(input("type a number: \n"))
-  if i % 2 == 0:
-    print(i,"is a prime number")
+  while i > 2 : 
+    if i % 2 == 0:
+      print(i,"is a prime number")
 def print_primes_between(j,k):
   j = int(input("type a number:\n"))
   k = int(input("type a number:\n"))
@@ -13,3 +14,4 @@ def print_primes_between(j,k):
         print(i,"is a prime number.")
         break
 print(print_primes_between("",""))      
+print(is_prime(i))
