@@ -12,4 +12,4 @@ def print_primes_between(j,k):
       if i % 2 != 0  :
         print(i,"is a prime number.")
         break
-print(print_primes_between("j","k"))      
+print(print_primes_between("",""))      
