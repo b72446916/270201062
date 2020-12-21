@@ -14,4 +14,4 @@ def print_primes_between(j,k):
         print(i,"is a prime number.")
         break
 print(print_primes_between("",""))      
-print(is_prime(i))
+print(is_prime(""))
