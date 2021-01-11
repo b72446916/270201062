@@ -2,14 +2,20 @@ class Cylinder:
   def __init__(self,radius,height):
     self.radius = radius
     self.height = height
-  def getradius(self):
-    return self._radius
-  def getheight(self):
-    return self._height
-cylinder = Cylinder(15,20) 
-def calculator(r,radius,height):
-  base_area = 3.14*cylinder.getradius()**2
-  surface_area =2*3,14*cylinder.getradius()*cylinder.getheight()
-  print(base_area,surface_area)
+  def get_radius(self):
+    return self.radius
+  def set_radius(self,radius):
+    self.radius = radius
+  def get_height(self):
+    return self.height
+  def set_height(self,height):
+    self.height = height
+  def base_area(self,radius):
+    base_area = 3.14 * self.radius ** 2
+  def surface_area(self,radius,height):
+    surface_area =2* 3,14 * self.radius* self.height
 
-calculator(r,radius,height)
+    
+cylinder = Cylinder(radius = 15, height = 20) 
+
+print(cylinder.get_radius())
